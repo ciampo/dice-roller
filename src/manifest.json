@@ -1,11 +1,11 @@
 {
   "name": "roll-the-dice",
-  "short_name": "roll-the-dice",
+  "short_name": "RdD",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
+  "theme_color": "#004ba0",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
