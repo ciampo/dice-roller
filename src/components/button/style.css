@@ -1,0 +1,52 @@
+.buttonReset {
+	border: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	overflow: visible;
+
+	background: transparent;
+
+	cursor: pointer;
+
+	/* inherit font & color from ancestor */
+	color: inherit;
+	font: inherit;
+
+	/* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+	line-height: normal;
+
+	/* Corrects font smoothing for webkit */
+	-webkit-font-smoothing: inherit;
+	-moz-osx-font-smoothing: inherit;
+
+	/* Corrects inability to style clickable `input` types in iOS */
+	-webkit-appearance: none;
+
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* Remove excess padding and border in Firefox 4+ */
+.buttonReset::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.buttonFlat {
+	color: var(--c-text-dark, #000);
+	font-size: 1rem;
+	line-height: 2;
+	padding: 0 .8em;
+	transition: .15s transform ease-out;
+}
+
+.buttonFlat:hover,
+.buttonFlat:active {
+	transform: scale(1.1);
+}
+
+.buttonFlat:focus {
+	color: var(--c-primary, #f00);
+	outline: none;
+}

@@ -1,0 +1,80 @@
+.header {
+	align-items: center;
+	box-shadow: 0 0 .125em rgba(0, 0, 0, .5);
+	background: var(--c-primary-dark, #aaa);
+	display: flex;
+	font-size: var(--l-header-height-s, 3.5rem);
+	height: 1em;
+	left: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 50;
+}
+
+.header > span {
+	color: var(--c-primary-dark-text, #000);
+	font-size: .5em;
+	font-weight: 400;
+	margin: 0 auto 0 0;
+	padding: 0 var(--l-content-padding-horizontal-s, .875rem);
+}
+
+.header nav {
+	align-items: center;
+	display: flex;
+	margin: 0 0 0 auto;
+}
+
+.header nav a {
+	color: var(--c-primary-dark-text, #000);
+	display: inline-block;
+	font-size: .3em;
+	font-weight: 500;
+	line-height: var(--l-header-height-s, 3.5rem);
+	min-width: 4rem;
+	padding: 0 .1em;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.header nav a::before,
+.header nav a::after {
+	bottom: 0;
+	content: '';
+	opacity: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	will-change: opacity;
+}
+
+.header nav a::before {
+	background:  rgba(0, 0, 0, .15);
+	top: 0;
+	z-index: 0;
+}
+
+.header nav a::after {
+	background:  var(--c-primary-light, #000);
+	height: .3em;
+	z-index: 2;
+}
+
+.header nav a:focus {
+	outline: none;
+}
+
+.header nav a:focus::before,
+.header nav a:hover::before,
+.header nav a:active::before {
+	opacity: 1;
+}
+
+.header nav a.active::after {
+	opacity: 1;
+}

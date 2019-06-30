@@ -1,0 +1,34 @@
+/* Edge */
+.dieEdge {
+  stroke: var(--c-text-dark, #000);
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Value printed on the die */
+.dieValue {
+  fill: var(--c-die-highlighted-face-text, #000);
+  fill-rule: nonzero;
+}
+
+/* Face fill colors */
+.dieFaceAccent {
+  fill: var(--c-die-highlighted-face, #fff);
+}
+
+.dieFaceNeutral1 {
+  fill:  var(--c-grey-230, #eee);
+}
+
+.dieFaceNeutral2 {
+  fill:  var(--c-grey-200, #ccc);
+}
+
+.dieFaceNeutral3 {
+  fill:  var(--c-grey-170, #bbb);
+}
+
+.dieFaceNeutral4 {
+  fill: var(--c-grey-140, #aaa);
+}
