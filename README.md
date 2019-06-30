@@ -26,7 +26,6 @@ npm run test
 
 ## MVP
 
-- better responsive stuff (buttons)
 - better design:
   - fit on one screen on mobile (4 cols? smaller icons? move dice count? smaller button / gaps / smaller result area, with less info)
   - swap to side-to-side on desktop
@@ -35,11 +34,15 @@ npm run test
 - highlight max/min rolls
 - no JS ?
 - update to latest preact
-- iOS favicon
+- meta:
+  - icons (add iOS favicon to )
+  - title/description/og image... (better wait for preact cli 3)
+- add 404 page
+
 
 ## Nice to have
 
-- modifier (add / remove a fixed numeber)
+- modifier (add / remove a fixed number)
 - dice sets (e.g. greataxe damage: 1d12 + 3)
 - options: change colors
-- look at haptics for adding dice / rolling
+- haptics on buttons (e.g die button, roll button..)
