@@ -38,11 +38,14 @@ npm run test
   - icons (add iOS favicon to )
   - title/description/og image... (better wait for preact cli 3)
 - add 404 page
+- robots.txt
 
 
 ## Nice to have
 
 - modifier (add / remove a fixed number)
 - dice sets (e.g. greataxe damage: 1d12 + 3)
-- options: change colors
+- options page:
+  - change colors
+  - choose what dice to display (inclusing dice presets)
 - haptics on buttons (e.g die button, roll button..)
