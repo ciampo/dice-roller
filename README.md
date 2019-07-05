@@ -32,7 +32,7 @@ npm run test
 - uniform buttons behaviour (bounce, outline on focus, borders..);
 - add "?" screen (shown on virst visit)
 - highlight max/min rolls
-- no JS ?
+- no JS ? add a message under the roll button / in the stats page
 - update to latest preact
 - meta:
   - icons (add iOS favicon to )
