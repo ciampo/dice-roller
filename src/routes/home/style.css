@@ -279,3 +279,20 @@ input:focus + .modeLabel::before {
 	font-weight: 500;
 	margin: auto;
 }
+
+.noJs {
+	align-items: center;
+	background: var(--c-background-alt, #f0f0f0);
+	bottom: 0;
+	color: var(--c-primary, #f00);
+	display: flex;
+	font-size: 1.25rem;
+	font-weight: 700;
+	justify-content: center;
+	left: 0;
+	padding: 0 var(--l-content-padding-horizontal-s, .875rem);
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+}

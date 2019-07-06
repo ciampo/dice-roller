@@ -28,6 +28,16 @@ export default class Stats extends Component {
 		this.getStats();
 	}
 
+	countTotalRolls(stats) {
+		let totRolls = 0;
+
+		Object.entries(stats).forEach(([_, rolls]) => {
+			totRolls += rolls.length;
+		});
+
+		return totRolls;
+	}
+
 	// gets called when this route is navigated to
 	componentWillMount() {
 		this.getStats();
@@ -35,12 +45,17 @@ export default class Stats extends Component {
 
 	// Note: `user` comes from the URL, courtesy of our router
 	render({}, { stats }) {
-
 		return (
 			<div class={style.stats}>
 				<h1 class="visuallyHidden">
 					Roll stats
 				</h1>
+
+				<noscript>
+					<p class={style.noJs}>
+						Please enable JavaScript to&nbsp;see&nbsp;your&nbsp;stats.
+					</p>
+				</noscript>
 
 				<ul class={style.list}>
 					{ Object.entries(stats).map(([dieType, rolls]) => (
@@ -58,7 +73,7 @@ export default class Stats extends Component {
 										Dice rolled
 									</span>
 									<span class={style.statFigure}>
-										{rolls.length}
+										{rolls.length === 0 ? '—' : rolls.length}
 									</span>
 								</li>
 								<li class={style.dieStatCell}>
@@ -76,7 +91,7 @@ export default class Stats extends Component {
 										Nat 1s
 									</span>
 									<span class={style.statFigure}>
-										{rolls.filter((val) => val === 1).length}
+										{rolls.length === 0 ? '—' : rolls.filter((val) => val === 1).length}
 									</span>
 								</li>
 								<li class={style.dieStatCell}>
@@ -84,7 +99,7 @@ export default class Stats extends Component {
 										Crits
 									</span>
 									<span class={style.statFigure}>
-										{rolls.filter((val) => val === DICE_TYPES[dieType]).length}
+										{rolls.length === 0 ? '—' : rolls.filter((val) => val === DICE_TYPES[dieType]).length}
 									</span>
 								</li>
 
@@ -96,10 +111,11 @@ export default class Stats extends Component {
 				<button
 					onClick={this.resetStats}
 					class={[
-						buttonStyle.buttonReset,
+						buttonStyle.buttonBase,
 						buttonStyle.buttonFlat,
 						style.resetButton
 					].join(' ')}
+					disabled={this.countTotalRolls(stats) === 0}
 				>
 					Reset stats
 				</button>

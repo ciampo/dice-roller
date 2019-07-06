@@ -225,6 +225,7 @@ class Home extends Component {
 							buttonStyle.buttonFlat,
 							style.clearButton
 						].join(' ')}
+						disabled={Object.keys(tray).length === 0}
 					>
 						Clear
 					</button>
@@ -236,6 +237,12 @@ class Home extends Component {
 						rollResult={rollResult}
 						mode={mode}
 					/>
+
+					<noscript>
+						<p class={style.noJs}>
+							Please enable JavaScript to&nbsp;roll&nbsp;the&nbsp;dice.
+						</p>
+					</noscript>
 				</section>
 			</div>
 		);

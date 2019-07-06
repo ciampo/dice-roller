@@ -93,3 +93,11 @@
 .resetButton {
   align-self: center;
 }
+
+.noJs {
+  color: var(--c-primary, #f00);
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem var(--l-content-padding-horizontal-s, .875rem);
+  text-align: center;
+}
