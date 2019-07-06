@@ -26,23 +26,22 @@ npm run test
 
 ## MVP
 
-- better design:
-  - fit on one screen on mobile (4 cols? smaller icons? move dice count? smaller button / gaps / smaller result area, with less info)
-  - swap to side-to-side on desktop
 - uniform buttons behaviour (bounce, outline on focus, borders..);
-- add "?" screen (shown on virst visit)
 - highlight max/min rolls
-- no JS ? add a message under the roll button / in the stats page
-- update to latest preact
+- add 404 page
+- robots.txt
+- better design:
+  - grow on mobile
+  - swap to side-to-side on desktop
+- add "?" screen (shown on virst visit)
 - meta:
   - icons (add iOS favicon to )
   - title/description/og image... (better wait for preact cli 3)
-- add 404 page
-- robots.txt
 
 
 ## Nice to have
 
+- update to latest preact cli / preact x
 - modifier (add / remove a fixed number)
 - dice sets (e.g. greataxe damage: 1d12 + 3)
 - options page:

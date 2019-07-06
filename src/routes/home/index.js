@@ -213,7 +213,10 @@ class Home extends Component {
 				<div class={style.buttonsRow}>
 					<button
 						onClick={this.rollTray}
-						class={style.rollButton}
+						class={[
+							buttonStyle.buttonBase,
+							buttonStyle.buttonPrimary
+						].join(' ')}
 						disabled={Object.keys(tray).length === 0}
 					>
 						Roll
@@ -221,7 +224,7 @@ class Home extends Component {
 					<button
 						onClick={this.clearTray}
 						class={[
-							buttonStyle.buttonReset,
+							buttonStyle.buttonBase,
 							buttonStyle.buttonFlat,
 							style.clearButton
 						].join(' ')}

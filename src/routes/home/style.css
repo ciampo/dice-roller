@@ -219,25 +219,6 @@ input:focus + .modeLabel::before {
 	right: var(--l-content-padding-horizontal-s, .875rem);
 }
 
-.rollButton {
-	background: var(--c-accent, #f00);
-	border: var(--l-border-width, 1px) solid currentColor;
-	cursor: pointer;
-	font-size: 1.25rem;
-	padding: .1em .4em;
-	-webkit-tap-highlight-color: transparent;
-}
-
-.rollButton:disabled {
-	background: var(--c-background-alt, #f0f0f0);
-	cursor: not-allowed
-}
-
-.rollButton:focus {
-	box-shadow: var(--l-border-width, 1px) var(--l-border-width, 1px) currentColor;
-	outline: none;
-}
-
 .tray {
 	align-items: center;
 	background: var(--c-background-alt, #f0f0f0);
