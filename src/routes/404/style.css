@@ -1,0 +1,17 @@
+.fourOhFour {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	/* Vertically, leave space for the header */
+	padding: calc(.5rem + var(--l-header-height-s, 3.5rem)) 0 0;
+	min-height: 100%;
+	width: 100%;
+}
+
+.description {
+	margin: 0 auto;
+}
+
+.homeButton {
+	margin-top: 2rem;
+}

@@ -1,10 +1,14 @@
 [
 	{
 		"url": "/",
-		"title": "Roll the dice"
+		"title": "Roll or die — a dice roller web app"
 	},
 	{
 		"url": "/stats",
-		"title": "Stats"
+		"title": "Stats | Roll or die — a dice roller web app"
+	},
+	{
+		"url": "/404",
+		"title": "Page not found | Roll or die — a dice roller web app"
 	}
 ]

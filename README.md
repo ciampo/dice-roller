@@ -26,9 +26,9 @@ npm run test
 
 ## MVP
 
+- add custom html template (node_modules/preact-cli/lib/resources/template.html)
 - uniform buttons behaviour (bounce, outline on focus, borders..);
 - highlight max/min rolls
-- add 404 page
 - robots.txt
 - better design:
   - grow on mobile
@@ -37,7 +37,6 @@ npm run test
 - meta:
   - icons (add iOS favicon to )
   - title/description/og image... (better wait for preact cli 3)
-
 
 ## Nice to have
 
