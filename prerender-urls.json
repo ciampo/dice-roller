@@ -1,14 +1,17 @@
 [
 	{
 		"url": "/",
-		"title": "Roll or die — a dice roller web app"
+		"title": "Roll or die — a dice roller web app",
+		"description": "Pick and roll your dice"
 	},
 	{
 		"url": "/stats",
-		"title": "Stats | Roll or die — a dice roller web app"
+		"title": "Stats | Roll or die — a dice roller web app",
+		"description": "Here you can find the stats about your rolls"
 	},
 	{
 		"url": "/404",
-		"title": "Page not found | Roll or die — a dice roller web app"
+		"title": "Page not found | Roll or die — a dice roller web app",
+		"description": "You rolled a nat 1! The requested page is not available."
 	}
 ]

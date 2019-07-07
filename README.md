@@ -29,21 +29,20 @@ npm run test
 - switch toggle — rethink styles, more consistent with primary button (also active/focus, border radius..)
 - header: better styles (consistent with primary button focus bar)
 - highlight max/min rolls
-- robots.txt
 - better design:
   - grow on mobile
   - swap to side-to-side on desktop
 - add "?" screen (shown on virst visit)
-- edit HTML template
-  - icons, including iOS
-  - title/description/og image... (better wait for preact cli 3)
-  - preload
+- robots.txt / sitemap.xml / base.html — dynamic build, to add the host URL from firebase config (or replace in build folder)
+- get a "final" domain and crawl on google search console / twitter / facebook etc
+- better icons / og image
 
 ## Nice to have
 
 - update to latest preact cli / preact x
   - review preact config and sw
   - review html template
+  - add CSS/JS preload
 - better rolling options (collapsing drawer):
   - move adv / disadv under those options
   - reroll nat 1s

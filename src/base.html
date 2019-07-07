@@ -3,10 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title><%= htmlWebpackPlugin.options.title %></title>
+		<meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes">
-		<link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json">
+		<link rel="apple-touch-icon" sizes="180x180" href="<%= htmlWebpackPlugin.files.pusblicPath %>assets/icons/apple-touch-icon.png">
+		<meta property="og:image" content="https://roll-the-dice-3d24c.web.app/assets/og-image.png">
+		<link rel="manifest" href="<%= htmlWebpackPlugin.files.pusblicPath %>manifest.json">
 		<% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
 			<meta name="theme-color" content="<%= htmlWebpackPlugin.options.manifest.theme_color %>">
 		<% } %>
