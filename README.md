@@ -33,7 +33,7 @@ npm run test
   - grow on mobile
   - swap to side-to-side on desktop
 - add "?" screen (shown on virst visit)
-- add custom html template (node_modules/preact-cli/lib/resources/template.html)
+- edit HTML template
   - icons, including iOS
   - title/description/og image... (better wait for preact cli 3)
   - precache
@@ -41,6 +41,8 @@ npm run test
 ## Nice to have
 
 - update to latest preact cli / preact x
+  - review preact config and sw
+  - review html template
 - better rolling options (collapsing drawer):
   - move adv / disadv under those options
   - reroll nat 1s
