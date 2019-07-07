@@ -26,7 +26,8 @@ npm run test
 
 ## MVP
 
-- uniform buttons behaviour (bounce, outline on focus, borders..);
+- switch toggle — rethink styles, more consistent with primary button (also active/focus, border radius..)
+- header: better styles (consistent with primary button focus bar)
 - highlight max/min rolls
 - robots.txt
 - better design:
@@ -36,7 +37,7 @@ npm run test
 - edit HTML template
   - icons, including iOS
   - title/description/og image... (better wait for preact cli 3)
-  - precache
+  - preload
 
 ## Nice to have
 

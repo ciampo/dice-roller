@@ -1,7 +1,7 @@
 /* Edge */
 .dieEdge {
   stroke: var(--c-text-dark, #000);
-  stroke-width: 6;
+  stroke-width: var(--c-die-stroke-width, 6);
   stroke-linecap: round;
   stroke-linejoin: round;
 }

@@ -28,6 +28,7 @@
 
 	--c-die-highlighted-face: var(--c-primary);
 	--c-die-highlighted-face-text: var(--c-primary-text);
+	--c-die-stroke-width: 6;
 
 	--l-header-height-s: 2.5rem;
 	--l-header-height-m: 3.5rem;

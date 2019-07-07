@@ -1,6 +1,6 @@
 import { h, Component } from 'preact';
-import style from './style';
 import buttonStyle from '../../components/button/style';
+import style from './style';
 
 import {
 	DICE_TYPES,
@@ -85,7 +85,10 @@ const DieButton = ({ dieType, onClick, howMany }) => {
 		<button
 			data-die-type={dieType}
 			onClick={onClick}
-			class={style.dieButton}
+			class={[
+				buttonStyle.buttonBase,
+				style.dieButton
+			].join(' ')}
 			aria-label={`Add a ${dieType}-faces die to the tray.`}
 		>
 			<DiceIcon />
