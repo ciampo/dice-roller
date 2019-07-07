@@ -7,7 +7,7 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build": "preact build --no-service-worker && cp build/404/index.html build/404.html",
+    "build": "preact build --config preact.config.js && cp build/404/index.html build/404.html && rm -rf build/404/",
     "serve:preact": "npm run build && preact serve",
     "serve:firebase": "npm run build && firebase serve --only hosting",
     "deploy": "npm run build && firebase deploy",
@@ -25,9 +25,10 @@
     "eslint": "^4.9.0",
     "eslint-config-synacor": "^2.0.2",
     "identity-obj-proxy": "^3.0.0",
-    "per-env": "^1.0.2",
     "jest": "^21.2.1",
+    "per-env": "^1.0.2",
     "preact-cli": "^2.1.0",
+    "preact-cli-sw-precache": "^1.0.3",
     "preact-render-spy": "^1.2.1"
   },
   "dependencies": {

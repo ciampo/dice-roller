@@ -25,7 +25,7 @@ export default class App extends Component {
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<Stats path="/stats" />
-					<FourOhFour path="/404" />
+					<FourOhFour default />
 				</Router>
 			</div>
 		);
