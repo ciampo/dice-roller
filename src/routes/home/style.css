@@ -207,6 +207,20 @@ input:focus + .modeToggleButton::before {
 	margin-top: auto;
 }
 
+.formulaDieRoll {
+	font-weight: 500;
+}
+
+.formulaDieRollCrit {
+	color: var(--c-roll-crit, #00be00);
+	font-weight: 700;
+}
+
+.formulaDieRollNatOne {
+	color: var(--c-roll-nat-one, #f00);
+	font-weight: 700;
+}
+
 .formulaDieType {
 	opacity: .5;
 	font-style: italic;

@@ -23,6 +23,9 @@
 	--c-accent-dark: #d58700;
 	--c-accent-dark-text: var(--c-text-dark);
 
+	--c-roll-crit: var(--c-primary);
+	--c-roll-nat-one: #ee3000;
+
 	--c-background: var(--c-grey-255);
 	--c-background-alt: var(--c-grey-245);
 

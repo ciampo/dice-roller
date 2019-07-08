@@ -29,7 +29,15 @@ const Results = ({ rollResult, mode }) => {
 		(
 			rollLabels.map(({ dieRoll, dieType }, index) => (
 				<span>
-					<span class={style.formulaDieRoll}>{dieRoll}</span>
+					<span
+						class={[
+							style.formulaDieRoll,
+							dieRoll === DICE_TYPES[dieType] ? style.formulaDieRollCrit : '',
+							dieRoll === 1 ? style.formulaDieRollNatOne : ''
+						].join(' ')}
+					>
+						{dieRoll}
+					</span>
 					<span class={style.formulaDieType}>({dieType})</span>
 					{index < rollLabels.length - 1 && (
 						<span> + </span>
