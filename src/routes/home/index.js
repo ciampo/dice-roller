@@ -240,7 +240,8 @@ class Home extends Component {
 						onClick={this.rollTray}
 						class={[
 							buttonStyle.buttonBase,
-							buttonStyle.buttonPrimary
+							buttonStyle.buttonPrimary,
+							style.rollButton
 						].join(' ')}
 						disabled={Object.keys(tray).length === 0}
 					>

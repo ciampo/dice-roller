@@ -77,6 +77,12 @@ input:focus + .modeToggleButton::before {
 	transform: none;
 }
 
+@media (min-height: 35rem) {
+	.modeToggleButton {
+		font-size: .85rem;
+	}
+}
+
 /*******************************************************************************
  * DICE GRID / BUTTONS
  ******************************************************************************/
@@ -89,8 +95,14 @@ input:focus + .modeToggleButton::before {
 	grid-template-rows: auto;
 	margin: auto 0 0;
 	padding: 1rem var(--l-content-padding-horizontal-s, .875rem);
-	max-width: 32rem;
+	max-width: 26rem;
 	width: 100%;
+}
+
+@media (min-height: 40rem) {
+	.diceGrid {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
 }
 
 .dieButton {
@@ -106,12 +118,6 @@ input:focus + .modeToggleButton::before {
 @media (min-width: 22rem) {
 	.dieButton {
 		font-size: 1.25rem;
-	}
-}
-
-@media (min-width: 25rem) {
-	.dieButton {
-		font-size: 1.5rem;
 	}
 }
 
@@ -171,6 +177,16 @@ input:focus + .modeToggleButton::before {
 	right: var(--l-content-padding-horizontal-s, .875rem);
 }
 
+@media (min-height: 35rem) and (min-width: 22.5rem) {
+	.rollButton {
+		font-size: 1.7rem;
+	}
+
+	.clearButton {
+		font-size: 1.3rem;
+	}
+}
+
 /*******************************************************************************
  * TRAY / ROLL RESULTS
  ******************************************************************************/
@@ -191,8 +207,20 @@ input:focus + .modeToggleButton::before {
 	flex-direction: column;
 	font-size: 2rem;
 	margin: auto;
-	min-height: 4.5rem;
+	min-height: 2.25em;
 	text-align: center;
+}
+
+@media (min-height: 35rem) {
+	.resultContainer {
+		font-size: 2.25rem;
+	}
+}
+
+@media (min-height: 40rem) {
+	.resultContainer {
+		font-size: 2.5rem;
+	}
 }
 
 .resultContainerAnimated {

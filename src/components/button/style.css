@@ -78,7 +78,7 @@
 	border: var(--l-border-width, 1px) solid currentColor;
 	border-radius: .2em;
 	font-size: 1.3rem;
-	padding: .2em .5em;
+	padding: .15em .5em;
 	position: relative;
 }
 
