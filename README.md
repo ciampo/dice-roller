@@ -26,7 +26,6 @@ npm run test
 
 ## MVP
 
-- switch toggle — rethink styles, more consistent with primary button (also active/focus, border radius..)
 - header: better styles (consistent with primary button focus bar)
 - highlight max/min rolls
 - better design:

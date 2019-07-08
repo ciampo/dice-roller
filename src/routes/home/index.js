@@ -59,7 +59,7 @@ const Results = ({ rollResult, mode }) => {
 
 	const emptyTrayMessage = mode === ROLL_MODES.NORMAL ?
 		'Pick some dice first' :
-		'Choose one die';
+		`Choose one die and roll at ${mode.toLowerCase()}.`;
 
 	return (
 		<p class={containerClass.join(' ')}>
@@ -163,12 +163,14 @@ class Home extends Component {
 					Roll the dice!
 				</h1>
 				<p class="visuallyHidden">
-					Add dice to the tray and click roll!
+					Add dice to the tray and click roll
 				</p>
 
 				<div class={style.modeRow}>
 					{ Object.keys(ROLL_MODES).map((rollModeId) => (
-						<label class={style.modeBox}>
+						<label
+							class={style.modeToggleLabel}
+						>
 							<input
 								type="radio"
 								name="roll-mode"
@@ -178,8 +180,17 @@ class Home extends Component {
 								class="visuallyHidden"
 							/>
 
-							<span class={style.modeLabel}>
+							<span
+								class={[
+									buttonStyle.buttonBase,
+									buttonStyle.buttonPrimary,
+									style.modeToggleButton
+								].join(' ')}
+							>
+								{/* Roll mode label */}
 								{ROLL_MODES[rollModeId]}
+
+								{/* Advantage / disadvantage icon */}
 								{(rollModeId === ROLL_MODE_ADVANTAGE || rollModeId === ROLL_MODE_DISADVANTAGE) && (
 									<svg
 										viewBox="0 0 256 256"
