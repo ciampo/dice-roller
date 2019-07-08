@@ -26,14 +26,12 @@ npm run test
 
 ## MVP
 
-- better design:
-  - grow on mobile
-  - swap to side-to-side on desktop
 - add WIP settings (mostly empty, with current version and next planned features)
 - add tutorial (under settings page). Somehow give the user the chance of viewing it on the first visit.
 - robots.txt / sitemap.xml / base.html — dynamic build, to add the host URL from firebase config (or replace in build folder)
 - get a "final" domain and crawl on google search console / twitter / facebook etc
 - better icons / og image
+- "add to home" prompt after using / in settings
 
 ## Nice to have
 
@@ -51,4 +49,5 @@ npm run test
   - change colors
   - create dice presets (refactor model behind default dice: each dice / preset is actually an array of dice)
   - choose what dice to show/hide in the roll page (inclusing dice presets)
+- desktop styles (drawer, stats grid...)
 - explore haptics on buttons (e.g die button, roll button..)
