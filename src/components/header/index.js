@@ -4,10 +4,32 @@ import style from './style';
 
 const Header = () => (
 	<header class={style.header}>
-		<span>Roll or Die</span>
+		<Link
+			class={style.title}
+			activeClassName={style.active}
+			href="/"
+		>
+			Roll or Die
+		</Link>
 		<nav>
-			<Link activeClassName={style.active} href="/">Roll</Link>
-			<Link activeClassName={style.active} href="/stats">Stats</Link>
+			<Link
+				activeClassName={style.active}
+				href="/"
+			>
+				Roll
+			</Link>
+			<Link
+				activeClassName={style.active}
+				href="/stats"
+			>
+				Stats
+			</Link>
+			<Link
+				activeClassName={style.active}
+				href="/settings"
+			>
+				Settings
+			</Link>
 		</nav>
 	</header>
 );
