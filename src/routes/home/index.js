@@ -158,7 +158,7 @@ class Home extends Component {
 
 	render({}, { tray, rollResult, mode }) {
 		return (
-			<div class="pageWrapper">
+			<main class="pageWrapper">
 				<h1 class="visuallyHidden">
 					Roll the dice!
 				</h1>
@@ -264,7 +264,7 @@ class Home extends Component {
 						</p>
 					</noscript>
 				</section>
-			</div>
+			</main>
 		);
 	}
 }

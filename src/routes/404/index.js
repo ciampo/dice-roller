@@ -5,7 +5,12 @@ import buttonStyle from '../../components/button/style';
 import style from './style';
 
 const FourOhFour = () => (
-	<div class="pageWrapper">
+	<main
+		class={[
+			'pageWrapper',
+			style.fourOhFour
+		].join(' ')}
+	>
 		<h1 class={style.title}>
 			You rolled a nat 1!
 		</h1>
@@ -24,7 +29,7 @@ const FourOhFour = () => (
 		>
 			Home
 		</Link>
-	</div>
+	</main>
 );
 
 export default FourOhFour;
