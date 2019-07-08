@@ -38,7 +38,7 @@
 	right: var(--l-border-width, 1px);
 }
 
-.modeToggleLabel:hover {
+.modeToggleLabel.modeToggleLabelChecked {
 	z-index: 1;
 }
 

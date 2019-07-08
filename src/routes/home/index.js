@@ -169,7 +169,10 @@ class Home extends Component {
 				<div class={style.modeRow}>
 					{ Object.keys(ROLL_MODES).map((rollModeId) => (
 						<label
-							class={style.modeToggleLabel}
+							class={[
+								style.modeToggleLabel,
+								(ROLL_MODES[rollModeId] === mode ? style.modeToggleLabelChecked : '')
+							].join(' ')}
 						>
 							<input
 								type="radio"
