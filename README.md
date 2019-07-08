@@ -26,7 +26,6 @@ npm run test
 
 ## MVP
 
-- highlight max/min rolls
 - better design:
   - grow on mobile
   - swap to side-to-side on desktop
