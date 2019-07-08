@@ -18,6 +18,10 @@ export default class App extends Component {
 		this.currentUrl = e.url;
 	};
 
+	componentDidMount() {
+		document.body.addEventListener('touchstart', () => {}, { passive: true });
+	}
+
 	render() {
 		return (
 			<div id="app">
