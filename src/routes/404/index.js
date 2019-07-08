@@ -5,7 +5,7 @@ import buttonStyle from '../../components/button/style';
 import style from './style';
 
 const FourOhFour = () => (
-	<div class={style.fourOhFour}>
+	<div class="pageWrapper">
 		<h1 class={style.title}>
 			You rolled a nat 1!
 		</h1>

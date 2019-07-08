@@ -3,7 +3,7 @@
 	box-shadow: 0 0 .125em rgba(0, 0, 0, .5);
 	background: var(--c-primary-dark, #aaa);
 	display: flex;
-	font-size: var(--l-header-height-s, 3.5rem);
+	font-size: var(--l-header-height, 3.5rem);
 	height: 1em;
 	left: 0;
 	padding: 0;
@@ -32,7 +32,7 @@
 	display: inline-block;
 	font-size: .3em;
 	font-weight: 500;
-	line-height: var(--l-header-height-s, 3.5rem);
+	line-height: var(--l-header-height, 3.5rem);
 	min-width: 4rem;
 	padding: 0 .1em;
 	position: relative;

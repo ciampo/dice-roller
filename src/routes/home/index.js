@@ -158,7 +158,7 @@ class Home extends Component {
 
 	render({}, { tray, rollResult, mode }) {
 		return (
-			<div class={style.home}>
+			<div class="pageWrapper">
 				<h1 class="visuallyHidden">
 					Roll the dice!
 				</h1>

@@ -30,13 +30,17 @@
 	--c-die-highlighted-face-text: var(--c-primary-text);
 	--c-die-stroke-width: 6;
 
-	--l-header-height-s: 2.5rem;
-	--l-header-height-m: 3.5rem;
-	--l-header-height-l: 4.5rem;
+	--l-header-height: 2.5rem;
 
 	--l-content-padding-horizontal-s: .875rem;
 
 	--l-border-width: .125rem;
+}
+
+@media screen and (min-width: 30rem) {
+	:root {
+		--l-header-height: 3rem;
+	}
 }
 
 html, body {
@@ -69,4 +73,14 @@ html, body {
 	padding: 0;
 	position: absolute;
 	width: 1px;
+}
+
+.pageWrapper {
+	align-items: stretch;
+	display: flex;
+	flex-direction: column;
+	/* Vertically, leave space for the header */
+	padding: calc(.5rem + var(--l-header-height, 3.5rem)) 0 0;
+	min-height: 100%;
+	width: 100%;
 }

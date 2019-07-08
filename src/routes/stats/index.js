@@ -46,7 +46,12 @@ export default class Stats extends Component {
 	// Note: `user` comes from the URL, courtesy of our router
 	render({}, { stats }) {
 		return (
-			<div class={style.stats}>
+			<div
+				class={[
+					'pageWrapper',
+					style.stats
+				].join(' ')}
+			>
 				<h1 class="visuallyHidden">
 					Roll stats
 				</h1>
