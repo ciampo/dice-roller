@@ -26,12 +26,12 @@ npm run test
 
 ## MVP
 
-- header: better styles (consistent with primary button focus bar)
 - highlight max/min rolls
 - better design:
   - grow on mobile
   - swap to side-to-side on desktop
-- add "?" screen (shown on virst visit)
+- add WIP settings (mostly empty, with current version and next planned features)
+- add tutorial (under settings page). Somehow give the user the chance of viewing it on the first visit.
 - robots.txt / sitemap.xml / base.html — dynamic build, to add the host URL from firebase config (or replace in build folder)
 - get a "final" domain and crawl on google search console / twitter / facebook etc
 - better icons / og image
