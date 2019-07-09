@@ -26,12 +26,14 @@ npm run test
 
 ## MVP
 
+- layout — grow header when the primary buttons grow
 - add WIP settings (mostly empty, with current version and next planned features)
 - add tutorial (under settings page). Somehow give the user the chance of viewing it on the first visit.
 - robots.txt / sitemap.xml / base.html — dynamic build, to add the host URL from firebase config (or replace in build folder)
 - get a "final" domain and crawl on google search console / twitter / facebook etc
 - better icons / og image
 - "add to home" prompt after using / in settings
+- bug — tray flashes when re-rolling the die.
 
 ## Nice to have
 
