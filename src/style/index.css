@@ -1,4 +1,5 @@
 :root {
+	/* Shades of grey */
 	--c-grey-255: #fff;
 	--c-grey-245: #f5f5f5;
 	--c-grey-230: #e6e6e6;
@@ -6,37 +7,76 @@
 	--c-grey-170: #aaa;
 	--c-grey-140: #8c8c8c;
 
+	/* Basic text */
 	--c-text-dark: #000;
 	--c-text-light: #fff;
 
-	--c-primary: #1976d2;
-	--c-primary-text: var(--c-text-light);
-	--c-primary-light: #63a4ff;
-	--c-primary-light-text: var(--c-text-dark);
-	--c-primary-dark: #004ba0;
-	--c-primary-dark-text: var(--c-text-light);
+	/* Mods applied to a color's L to create the lighter/darker versions */
+	--c-mod-light: 25%;
+	--c-mod-dark: 20%;
 
-	--c-accent: #fbbf00;
-	--c-accent-text: var(--c-text-dark);
-	--c-accent-light: #ffe386;
-	--c-accent-light-text: var(--c-text-dark);
-	--c-accent-dark: #d58700;
-	--c-accent-dark-text: var(--c-text-dark);
-
-	--c-roll-crit: var(--c-primary);
-	--c-roll-nat-one: #ee3000;
-
+	/* Backgrounds */
 	--c-background: var(--c-grey-255);
 	--c-background-alt: var(--c-grey-245);
 
+	/* Primary */
+	--c-primary-h: 210;
+	--c-primary-s: 79%;
+	--c-primary-l: 45%;
+	--c-primary: hsl(
+		var(--c-primary-h),
+		var(--c-primary-s),
+		var(--c-primary-l)
+	);
+	--c-primary-text: var(--c-text-light);
+	--c-primary-light: hsl(
+		var(--c-primary-h),
+		var(--c-primary-s),
+		calc(var(--c-primary-l) + var(--c-mod-light))
+	);
+	--c-primary-light-text: var(--c-text-dark);
+	--c-primary-dark:  hsl(
+		var(--c-primary-h),
+		var(--c-primary-s),
+		calc(var(--c-primary-l) - var(--c-mod-dark))
+	);
+	--c-primary-dark-text: var(--c-text-light);
+
+	/* Accent */
+	--c-accent-h: 46;
+	--c-accent-s: 100%;
+	--c-accent-l: 49%;
+	--c-accent: hsl(
+		var(--c-accent-h),
+		var(--c-accent-s),
+		var(--c-accent-l)
+	);
+	--c-accent-text: var(--c-text-dark);
+	--c-accent-light: hsl(
+		var(--c-accent-h),
+		var(--c-accent-s),
+		calc(var(--c-accent-l) + var(--c-mod-light))
+	);
+	--c-accent-light-text: var(--c-text-dark);
+	--c-accent-dark:  hsl(
+		var(--c-accent-h),
+		var(--c-accent-s),
+		calc(var(--c-accent-l) - var(--c-mod-dark))
+	);
+	--c-accent-dark-text: var(--c-text-light);
+
+	/* Crit success/fail  */
+	--c-roll-crit: var(--c-primary);
+	--c-roll-nat-one: #ee3000;
+
+	/* Dice */
 	--c-die-highlighted-face: var(--c-primary);
 	--c-die-highlighted-face-text: var(--c-primary-text);
 	--c-die-stroke-width: 6;
 
+	/* Layout */
 	--l-header-height: 2.5rem;
-
 	--l-content-padding-horizontal-s: .875rem;
-
 	--l-border-width: .125rem;
 }
 
@@ -86,4 +126,13 @@ html, body {
 	padding: calc(.5rem + var(--l-header-height, 3.5rem)) 0 0;
 	min-height: 100%;
 	width: 100%;
+}
+
+p {
+	line-height: 1.4;
+}
+
+a {
+	color: var(--c-accent-dark, #f00);
+	font-weight: 500;
 }

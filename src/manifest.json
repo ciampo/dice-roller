@@ -1,6 +1,6 @@
 {
   "name": "roll-the-dice",
-  "short_name": "RdD",
+  "short_name": "RoD",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

@@ -1,5 +1,5 @@
-import { DICE_TYPES, ROLL_MODES } from './enums';
-import { storeDieRoll } from '../services/stats';
+import { DICE_TYPES, ROLL_MODES } from './dice-enums';
+import { storeDieRoll } from '../storage/stats';
 import { Random, MersenneTwister19937 } from 'random-js';
 
 const randomGen = new Random(MersenneTwister19937.autoSeed());

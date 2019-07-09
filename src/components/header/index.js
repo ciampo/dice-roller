@@ -9,7 +9,7 @@ const Header = () => (
 			activeClassName={style.active}
 			href="/"
 		>
-			Roll or Die
+			Natural 20
 		</Link>
 		<nav>
 			<Link

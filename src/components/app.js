@@ -6,6 +6,8 @@ import Header from './header';
 // Code-splitting is automated for routes
 import Home from '../routes/home';
 import Stats from '../routes/stats';
+import Settings from '../routes/settings';
+import Help from '../routes/help';
 import FourOhFour from '../routes/404';
 
 export default class App extends Component {
@@ -29,6 +31,8 @@ export default class App extends Component {
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
 					<Stats path="/stats" />
+					<Settings path="/settings" />
+					<Help path="/help" />
 					<FourOhFour default />
 				</Router>
 			</div>

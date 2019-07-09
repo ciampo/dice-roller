@@ -2,8 +2,8 @@ import { h, Component } from 'preact';
 import style from './style';
 import buttonStyle from '../../components/button/style';
 
-import { DICE_TYPES } from '../../logic/enums';
-import { getDieRollStats, resetStats } from '../../services/stats';
+import { DICE_TYPES } from '../../logic/dice-enums';
+import { getDieRollStats, resetStats } from '../../storage/stats';
 
 export default class Stats extends Component {
 	state = {

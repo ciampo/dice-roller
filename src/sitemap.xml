@@ -6,4 +6,10 @@
   <url>
     <loc>https://roll-the-dice-3d24c.web.app/stats</loc>
   </url>
+  <url>
+    <loc>https://roll-the-dice-3d24c.web.app/settings</loc>
+  </url>
+  <url>
+    <loc>https://roll-the-dice-3d24c.web.app/help</loc>
+  </url>
 </urlset>

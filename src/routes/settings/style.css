@@ -1,0 +1,19 @@
+.section {
+  justify-self: center;
+  max-width: 32rem;
+  margin: auto;
+  padding: 1rem var(--l-content-padding-horizontal-s, .875rem);
+  text-align: center;
+}
+
+h2 {
+  margin: 0 auto 1.5em;
+}
+
+.section p {
+  margin: 0;
+}
+
+.section p + p {
+  margin-top: 1em;
+}

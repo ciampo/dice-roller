@@ -1,17 +1,27 @@
 [
 	{
 		"url": "/",
-		"title": "Roll or die — a dice roller web app",
+		"title": "Natural 20 — a dice roller web app",
 		"description": "Pick and roll your dice"
 	},
 	{
 		"url": "/stats",
-		"title": "Stats | Roll or die — a dice roller web app",
-		"description": "Here you can find the stats about your rolls"
+		"title": "Stats | Natural 20 — a dice roller web app",
+		"description": "See the stats about your rolls"
+	},
+	{
+		"url": "/settings",
+		"title": "Settings | Natural 20 — a dice roller web app",
+		"description": "See and change the settings"
+	},
+	{
+		"url": "/help",
+		"title": "Help | Natural 20 — a dice roller web app",
+		"description": "Learn how to use the app"
 	},
 	{
 		"url": "/404",
-		"title": "Page not found | Roll or die — a dice roller web app",
+		"title": "Page not found | Natural 20 — a dice roller web app",
 		"description": "You rolled a nat 1! The requested page is not available."
 	}
 ]

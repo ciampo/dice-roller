@@ -8,7 +8,7 @@ import {
 	DICE_ICONS,
 	ROLL_MODE_ADVANTAGE,
 	ROLL_MODE_DISADVANTAGE
-} from '../../logic/enums';
+} from '../../logic/dice-enums';
 import { roll } from '../../logic/roll';
 
 const Results = ({ rollResult, mode }) => {
