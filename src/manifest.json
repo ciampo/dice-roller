@@ -1,11 +1,11 @@
 {
-  "name": "roll-the-dice",
-  "short_name": "RoD",
+  "name": "natural20",
+  "short_name": "nat20",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#004ba0",
+  "theme_color": "#0d3f72",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
