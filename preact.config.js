@@ -33,7 +33,9 @@ export default function (config) {
 			/\.map$/,
 			/push-manifest\.json$/,
 			/.DS_Store/,
-			/\.git/
+			/\.git/,
+			/\.xml/,
+			/\.txt/
 		]
 	};
 
