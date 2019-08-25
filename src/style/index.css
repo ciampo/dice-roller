@@ -72,7 +72,8 @@
 	/* Dice */
 	--c-die-highlighted-face: var(--c-primary);
 	--c-die-highlighted-face-text: var(--c-primary-text);
-	--c-die-stroke-width: 6;
+	--c-die-edge: var(--c-background);
+	--c-die-stroke-width: 8;
 
 	/* Layout */
 	--l-header-height: 2.5rem;
@@ -80,7 +81,8 @@
 	--l-border-width: .125rem;
 }
 
-@media screen and (min-width: 30rem) {
+/* Header height */
+@media (min-width: 30rem), (min-height: 40rem) and (min-width: 23rem) {
 	:root {
 		--l-header-height: 3rem;
 	}

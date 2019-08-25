@@ -133,7 +133,8 @@ input:focus + .modeToggleButton::before {
 .dieButton:focus svg {
 	--c-die-highlighted-face: var(--c-primary-light);
 	--c-die-highlighted-face-text: var(--c-primary-light-text);
-	--c-die-stroke-width: 10;
+	--c-die-stroke-width: 6;
+	--c-die-edge: var(--c-primary-light-text);
 }
 
 .dieCount {
