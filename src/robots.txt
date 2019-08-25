@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /404
 
-Sitemap: https://roll-the-dice-3d24c.web.app/sitemap.xml
+Sitemap: https://__CANONICAL_URL__/sitemap.xml

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://roll-the-dice-3d24c.web.app/</loc>
+    <loc>https://__CANONICAL_URL__/</loc>
   </url>
   <url>
-    <loc>https://roll-the-dice-3d24c.web.app/stats</loc>
+    <loc>https://__CANONICAL_URL__/stats</loc>
   </url>
   <url>
-    <loc>https://roll-the-dice-3d24c.web.app/settings</loc>
+    <loc>https://__CANONICAL_URL__/settings</loc>
   </url>
   <url>
-    <loc>https://roll-the-dice-3d24c.web.app/help</loc>
+    <loc>https://__CANONICAL_URL__/help</loc>
   </url>
 </urlset>

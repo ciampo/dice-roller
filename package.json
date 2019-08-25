@@ -7,7 +7,7 @@
     "start": "per-env",
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
-    "build": "preact build --config preact.config.js --template src/base.html && cp build/404/index.html build/404.html && rm -rf build/404/ && cp src/robots.txt build/robots.txt && cp src/sitemap.xml build/sitemap.xml",
+    "build": "preact build --config preact.config.js --template src/base.html && cp build/404/index.html build/404.html && rm -rf build/404/ && cp src/robots.txt build/robots.txt && cp src/sitemap.xml build/sitemap.xml && cp src/google-verify/* build/ && sed -i '.bak' 's/__CANONICAL_URL__/natural-20.web.app/g' build/*.{html,xml,txt} && rm -rf build/*.bak",
     "serve:preact": "npm run build && preact serve",
     "serve:firebase": "npm run build && firebase serve --only hosting",
     "deploy": "npm run build && firebase deploy",

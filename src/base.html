@@ -8,7 +8,11 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="apple-touch-icon" sizes="180x180" href="<%= htmlWebpackPlugin.files.pusblicPath %>assets/icons/apple-touch-icon.png">
-		<meta property="og:image" content="https://roll-the-dice-3d24c.web.app/assets/og-image.png">
+		<meta property="og:url" content="https://__CANONICAL_URL__">
+		<meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>">
+		<meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="https://__CANONICAL_URL__/assets/og-image.png">
 		<link rel="manifest" href="<%= htmlWebpackPlugin.files.pusblicPath %>manifest.json">
 		<% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
 			<meta name="theme-color" content="<%= htmlWebpackPlugin.options.manifest.theme_color %>">
