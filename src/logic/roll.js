@@ -2,9 +2,12 @@ import { DICE_TYPES, ROLL_MODES } from './dice-enums';
 import { storeDieRoll } from '../storage/stats';
 import { Random, MersenneTwister19937, browserCrypto } from 'random-js';
 
-const randomGen = ('crypto' in window && 'getRandomValues' in window.crypto) ?
-	new Random(browserCrypto) :
-	new Random(MersenneTwister19937.autoSeed());
+const randomGen =
+	(
+		typeof window !== 'undefined' &&
+		'crypto' in window &&
+		'getRandomValues' in window.crypto
+	) ? new Random(browserCrypto) : new Random(MersenneTwister19937.autoSeed());
 
 const getRandomArbitrary = (min, max) => randomGen.integer(min, max);
 
