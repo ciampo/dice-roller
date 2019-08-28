@@ -51,3 +51,4 @@ npm run test
   - choose what dice to show/hide in the roll page (inclusing dice presets)
 - desktop styles (drawer, stats grid...)
 - explore haptics on buttons (e.g die button, roll button..)
+- animaiton to remove results of a roll before showing a new one
