@@ -78,6 +78,15 @@
             "value": "max-age=31536000, immutable"
           }
         ]
+      },
+      {
+        "source": "**/og-sharing-image.png",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public, max-age=600"
+          }
+        ]
       }
     ],
     "cleanUrls": true,
