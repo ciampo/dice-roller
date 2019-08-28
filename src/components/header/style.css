@@ -33,11 +33,50 @@
 }
 
 .title {
-	color: var(--c-primary-dark-text, #000);
+	align-self: stretch;
+	align-items: center;
+	display: flex;
 	font-size: .5em;
 	font-weight: 400;
 	margin: 0 auto 0 0;
 	padding: 0 var(--l-content-padding-horizontal-s, .875rem);
+}
+
+.logoAltText {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap; /* added line */
+}
+
+.logo {
+	display:	block;
+	height: auto;
+	width: 5.5rem;
+}
+
+/* Larger logo */
+@media (min-width: 22.5rem) {
+	.logo {
+		width: 6rem;
+	}
+}
+
+@media (min-width: 30rem), (min-height: 40rem) and (min-width: 23rem) {
+	.logo {
+		width: 7rem;
+	}
+}
+
+.logoLetters {
+	fill: var(--c-primary-dark-text, #000);
+	opacity: .8;
+}
+
+.logoNumbers {
+	fill: var(--c-primary-dark-text, #000);
 }
 
 .header nav {

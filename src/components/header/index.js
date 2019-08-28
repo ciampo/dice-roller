@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
+import Natural20Logo from './logo';
 import style from './style';
 
 const Header = () => (
@@ -9,7 +10,10 @@ const Header = () => (
 			activeClassName={style.active}
 			href="/"
 		>
-			Natural 20
+			<span className={style.logoAltText}>
+				Natural 20
+			</span>
+			<Natural20Logo />
 		</Link>
 		<nav>
 			<Link
