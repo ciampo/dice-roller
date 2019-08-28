@@ -27,11 +27,7 @@ const roll = (diceTray, mode) => {
 		const howManyTimes = mode === ROLL_MODES.NORMAL ? howMany : 2;
 
 		for (let i = 0; i < howManyTimes; i++) {
-			const rolledValue = dieMaxValue === 100 ?
-				// Perc dice return multiples of 5, range [5, 100].
-				5 * getRandomArbitrary(1, 20) :
-				// Every other dice returns a value between [1, dieMaxValue].
-				getRandomArbitrary(1, dieMaxValue) ;
+			const rolledValue = getRandomArbitrary(1, dieMaxValue);
 
 			if (!(dieType in results)) {
 				results[dieType] = [];
