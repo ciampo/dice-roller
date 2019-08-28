@@ -13,7 +13,7 @@
 
 	/* Mods applied to a color's L to create the lighter/darker versions */
 	--c-mod-light: 25%;
-	--c-mod-dark: 20%;
+	--c-mod-dark: 14%;
 
 	/* Backgrounds */
 	--c-background: var(--c-grey-255);
