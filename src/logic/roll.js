@@ -1,10 +1,11 @@
 import { DICE_TYPES, ROLL_MODES } from './dice-enums';
 import { storeDieRoll } from '../storage/stats';
-import { Random, MersenneTwister19937 } from 'random-js';
+import { Random, MersenneTwister19937, browserCrypto } from 'random-js';
 
-const randomGen = new Random(MersenneTwister19937.autoSeed());
+const randomGen = ('crypto' in window && 'getRandomValues' in window.crypto) ?
+	new Random(browserCrypto) :
+	new Random(MersenneTwister19937.autoSeed());
 
-// TODO: better random number generator
 const getRandomArbitrary = (min, max) => randomGen.integer(min, max);
 
 const roll = (diceTray, mode) => {
