@@ -1,6 +1,6 @@
-# Roll the dice
+# Natural 20
 
-A utility app for rolling dice.
+A dice roller web app.
 
 ## CLI Commands
 
